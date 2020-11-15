@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function usePageTop({ topOffset = 0 }) {
+function usePageTop(topOffset = 0) {
   const [top, setTop] = useState(true);
   useEffect(() => {
     function handleScroll() {

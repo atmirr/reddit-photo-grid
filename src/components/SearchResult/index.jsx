@@ -29,9 +29,7 @@ function SearchResult({
   const posts = useSelector(getPosts(keyword));
   const errorMessage = useSelector(getError());
   const isLoading = useSelector(getIsLoading());
-  const isPageBottom = usePageBottom({
-    bottomOffset: 10,
-  });
+  const isPageBottom = usePageBottom();
   const hasKeyword = Boolean(keyword);
   const fullscreen = !hasKeyword || isEmpty(posts);
   const handleLoadPosts = useCallback(

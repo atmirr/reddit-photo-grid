@@ -38,9 +38,7 @@ const Gutter = styled.div`
 function AppBar({
   handleKeywordChange,
 }: AppBarProps): Element<typeof Fragment> {
-  const isPageTop = usePageTop({
-    topOffset: 30,
-  });
+  const isPageTop = usePageTop(30);
   const compact = !isPageTop;
   return (
     <>

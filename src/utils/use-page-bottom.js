@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function usePageBottom({ bottomOffset = 0 }) {
+function usePageBottom(bottomOffset = 0) {
   const [bottom, setBottom] = useState(false);
   useEffect(() => {
     function handleScroll() {
