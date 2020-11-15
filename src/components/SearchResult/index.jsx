@@ -6,7 +6,7 @@ import { isEmpty } from 'lodash';
 import { useDispatch, useSelector } from 'react-redux';
 import usePageBottom from '@utils/use-page-bottom';
 import { loadPosts } from '@actions/posts';
-import { getPosts } from '@selectors/posts';
+import { getPosts, getError, getIsLoading } from '@selectors/posts';
 import ImagesGrid from './components/ImagesGrid';
 import IntroMessage from './components/IntroMessage';
 import ErrorMessage from './components/ErrorMessage';
@@ -24,11 +24,11 @@ const Wrapper = styled.div`
 
 function SearchResult({
   keyword,
-  errorMessage,
-  isLoading,
 }: SearchResultProps): Element<typeof Fragment> {
   const dispatch = useDispatch();
   const posts = useSelector(getPosts(keyword));
+  const errorMessage = useSelector(getError());
+  const isLoading = useSelector(getIsLoading());
   const isPageBottom = usePageBottom({
     bottomOffset: 10,
   });
