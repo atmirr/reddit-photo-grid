@@ -1,0 +1,24 @@
+[ignore]
+<PROJECT_ROOT>/.history/
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^@components' ->'<PROJECT_ROOT>/src/components'
+module.name_mapper='^@actions' ->'<PROJECT_ROOT>/src/actions'
+module.name_mapper='^@reducers' ->'<PROJECT_ROOT>/src/reducers'
+module.name_mapper='^@sagas' ->'<PROJECT_ROOT>/src/sagas'
+module.name_mapper='^@api' ->'<PROJECT_ROOT>/src/api'
+module.name_mapper='^@selectors' ->'<PROJECT_ROOT>/src/selectors'
+module.name_mapper='^@constants' ->'<PROJECT_ROOT>/src/constants'
+module.name_mapper='^@utils' ->'<PROJECT_ROOT>/src/utils'
+module.name_mapper='^@assets' ->'<PROJECT_ROOT>/src/assets'
+
+[strict]
+
+[untyped]
+.*/node_modules/*

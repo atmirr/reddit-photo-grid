@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImagesGrid /> should renders the component 1`] = `
+<div
+  class="sc-dlfnbm fvtGdp"
+/>
+`;
