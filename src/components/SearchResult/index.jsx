@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: ${({ fullscreen }) => (fullscreen ? '75vh' : 'auto')};
-  padding: 0 15px;
+  padding: 0 15px 35px 15px;
 `;
 
 function SearchResult({
@@ -57,7 +57,7 @@ function SearchResult({
       <ImagesGrid posts={posts} />
       <Wrapper fullscreen={fullscreen}>
         {!hasKeyword && <IntroMessage />}
-        {errorMessage && <ErrorMessage message={errorMessage} />}
+        {hasKeyword && errorMessage && <ErrorMessage message={errorMessage} />}
         {isLoading && <LoadingIndicator />}
       </Wrapper>
     </>
