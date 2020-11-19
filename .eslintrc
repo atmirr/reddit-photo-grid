@@ -4,19 +4,26 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "prettier",
-    "prettier/react"
+    "prettier/react",
+    "plugin:cypress/recommended"
   ],
-  "plugins": ["react", "react-hooks", "prettier", "jest", "flowtype"],
+  "plugins": ["react", "react-hooks", "prettier", "jest", "flowtype", "cypress"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": 1,
     "react/prop-types": 0,
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn" 
+    "react-hooks/exhaustive-deps": "warn",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error"
   },
   "env": {
     "browser": true,
     "node": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "cypress/globals": true
   }
 }
