@@ -42,7 +42,7 @@ function AppBar({
   const compact = !isPageTop;
   return (
     <>
-      <Header compact={compact}>
+      <Header data-testid="header" compact={compact}>
         <Logo compact={compact} />
         <SearchWrapper>
           <SearchBox compact={compact} handleChange={handleKeywordChange} />

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageItem /> should renders the component 1`] = `
+<div
+  class="sc-bdfBwQ gTWBiH"
+>
+  <div
+    class="sc-gsTCUz fGxiCj"
+  >
+    <img
+      alt="Sample post"
+      height="200"
+      src="https://b.thumbs.redditmedia.com/lkIqoXa0Yhxwhy1rjgw0m6dJFnLVyPcZGpj0wzyTW9w.jpg"
+      width="200"
+    />
+  </div>
+</div>
+`;

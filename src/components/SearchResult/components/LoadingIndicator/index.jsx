@@ -78,7 +78,7 @@ const Item = styled.div`
 
 function LoadingIndicator(): Element<typeof Fragment> {
   return (
-    <Container>
+    <Container data-testid="loading-indicator">
       <Label>Loading</Label>
       <Wrapper>
         <Item></Item>

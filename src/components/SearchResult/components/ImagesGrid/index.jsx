@@ -17,7 +17,7 @@ const Container = styled.div`
 
 function ImagesGrid({ posts }: ImagesGridProps): Element<'div'> {
   return (
-    <Container>
+    <Container data-testid="images-grid">
       {!isEmpty(posts) &&
         posts.map(({ title, thumbnail }, index) => (
           <ImageItem title={title} thumbnail={thumbnail} key={index} />

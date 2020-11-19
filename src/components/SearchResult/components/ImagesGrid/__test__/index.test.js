@@ -25,10 +25,4 @@ describe('<ImagesGrid />', () => {
     const { container } = render(<ImagesGrid posts={posts} />);
     expect(container.querySelectorAll('img').length).toEqual(2);
   });
-
-  it("should contain post's title as the alt text for images", () => {
-    const { queryByAltText } = render(<ImagesGrid posts={posts} />);
-    expect(queryByAltText('First sample post')).toBeTruthy();
-    expect(queryByAltText('Second sample post')).toBeTruthy();
-  });
 });
