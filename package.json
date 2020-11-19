@@ -21,7 +21,8 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "flow": "flow",
-    "lint:css":"stylelint './src/**/*.js'"
+    "lint:css": "stylelint './src/**/*.js'",
+    "cypress:open": "cypress open"
   },
   "browserslist": {
     "production": [
@@ -40,6 +41,7 @@
     "customize-cra": "^1.0.0",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-prettier": "^3.1.4",
     "flow-bin": "^0.137.0",
     "prettier": "^2.1.2",
