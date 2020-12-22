@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppBar /> should renders the component 1`] = `
+<div
+  class="sc-eCssSg hyDoEB"
+  data-testid="header"
+>
+  <div
+    class="sc-bdfBwQ brgTeL"
+  >
+    <img
+      alt="Reddit logo"
+      class="sc-gsTCUz jmiNha"
+      src="reddit-logo.svg"
+    />
+  </div>
+  <div
+    class="sc-jSgupP RYSYS"
+  >
+    <div
+      class="sc-dlfnbm cwKDAe"
+    >
+      <input
+        class="sc-hKgILt gUDjZy"
+        placeholder="What are you looking for today?"
+      />
+    </div>
+  </div>
+</div>
+`;

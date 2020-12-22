@@ -3,7 +3,7 @@ import postsSecondPageJSON from '../../fixtures/api/posts-second-page.json';
 
 context('Home page', () => {
   beforeEach(() => {
-    cy.route2('GET', 'https://www.reddit.com/r/cats/top.json', {
+    cy.intercept('GET', 'https://www.reddit.com/r/cats/top.json', {
       body: postsJSON,
       delayMs: 100,
     });
@@ -20,7 +20,7 @@ context('Home page', () => {
     cy.get('[data-testid="loading-indicator"]').should('be.visible');
   });
 
-  it.only('should display the welcome message when the user clear the keyword from the search box', () => {
+  it('should display the welcome message when the user clear the keyword from the search box', () => {
     cy.get('[placeholder="What are you looking for today?"]').type('cats');
     cy.get('[placeholder="What are you looking for today?"]').click().clear();
     cy.contains(
@@ -29,7 +29,7 @@ context('Home page', () => {
   });
 
   it('should load more posts when user scroll down the page', () => {
-    cy.route2('GET', 'https://www.reddit.com/r/cats/top.json', {
+    cy.intercept('GET', 'https://www.reddit.com/r/cats/top.json', {
       body: postsSecondPageJSON,
       query: { after: 't3_jvwchx' },
       delayMs: 100,
